@@ -7,7 +7,7 @@ import SlicknodeLink from 'slicknode-apollo-link';
 // import 'isomorphic-fetch'; // Add isomorphic fetch if fetch is not available in your environment (NodeJS)
 
 // Replace with your Slicknode endpoint 
-const SLICKNODE_ENDPOINT = ' https://socialrunner-b9ecfe95.us-east1.slicknode.com';
+const SLICKNODE_ENDPOINT = ' https://socialrunner-feda3fed.us-east1.slicknode.com';
 
 const slicknodeLink = new SlicknodeLink({
   debug: true // Writes auth debug info to console, disable in production
