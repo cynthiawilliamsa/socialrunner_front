@@ -7,8 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
-   } from 'reactstrap';
+  NavLink   } from 'reactstrap';
 
 class NavHeader extends React.Component {
   constructor(props) {
@@ -33,13 +32,13 @@ class NavHeader extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink label="Home" component={Link} to="/userDash">Home</NavLink>
+                <NavLink href="/home">My Profile</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink label="RaceFinder" component={Link} to="/search">RaceFinder</NavLink>
+                <NavLink href="/search">RaceFinder</NavLink>
               </NavItem>
               <NavItem>
-              <NavLink label="Logout" component={Link} to="/">Logout</NavLink>
+              <NavLink href="/login">Logout</NavLink>
               </NavItem>             
             </Nav>
           </Collapse>
