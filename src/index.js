@@ -3,8 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ApolloProvider} from 'react-apollo';
+// Import client from wherever you created (and exported) it
+import client from './client';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const AppWrapper = () => (
+    <ApolloProvider client={client}>
+      <div>
+        <h1><App/></h1>
+      </div>
+    </ApolloProvider>
+  );
+
+ReactDOM.render(<AppWrapper />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
